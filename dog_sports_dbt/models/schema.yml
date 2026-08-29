@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fct_trial_performance
+    description: "Mart table calculating rolling qualification metrics and cumulative dog sport expenditures."
+    columns:
+      - name: dog_name
+        description: "The primary identifier representing the dog."
+        tests:
+          - not_null
+
+      - name: sport_type
+        description: "The type of event being evaluated."
+        tests:
+          - not_null
+
+      - name: qualification_rate
+        description: "Percentage of qualifying scores."
+        tests:
+          - not_null
+
+      - name: cumulative_sport_spend_usd
+        description: "Running total of money spent on entries to guard against budget creep."
+        tests:
+          - not_null

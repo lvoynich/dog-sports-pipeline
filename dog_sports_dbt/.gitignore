@@ -1,0 +1,11 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+# Ignore keys and local profiles
+rsa_key.p8
+rsa_key.pub
+profiles.yml
+__pycache__/
